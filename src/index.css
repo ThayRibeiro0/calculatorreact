@@ -1,3 +1,4 @@
+/* torna a selecao de cores mais faceis por meio de variaveis */
 :root{
   --primary: #d81e5b;
   --secondary: #8c38ff;
@@ -13,10 +14,12 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
+/* cor de fundo */
 body{
   background: linear-gradient(#e9e9b8, #fff);
 }
 
+/* ajusta toda a caixa ou melhor a calculadora ao centro da tela */
 .App{
   display: flex;
   min-height: 100vh;
@@ -25,6 +28,7 @@ body{
   padding: 16px;
 }
 
+/* dentro da caixa onde trabalha suas cores internas e deixa ela flutuando e nada saiu para fora */
 .calculator{
   width: 100%;
   max-width: 400px;
@@ -34,6 +38,7 @@ body{
   box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
 }
 
+/* trabalha o display e como ele se apresenta */
 .display{
   padding: 16px;
   text-align: right;
@@ -44,11 +49,13 @@ body{
   font-weight: 300;
 }
 
+/* span e o valor menor que aparece a soma previa */
 .display span{
   font-size: 14px;
   color: #888;
 }
 
+/* formatando os botoes de digitos e operadores */
 button{
   height: 100px;
   appearance: none;
@@ -60,6 +67,7 @@ button{
   cursor: pointer;
 }
 
+/* muda a opacidade quando passa o mouse sobre os botoes*/
 button::hover{
   opacity: 0.9;
 }
@@ -68,17 +76,20 @@ button::hover{
   display: flex;
 }
 
+/* torna os botoes mais esticados e com tamanhos iguais no espaco ate o top onde comeca o display e negrito*/
 .operators button{
   flex: 1 1 0%;
   background-color: var(--primary);
   font-weight: 700;
 }
 
+
 .digits{
   display: flex;
   flex-wrap: wrap;
 }
 
+/* aqui estica ainda mais para que todos eles encaixe entre os fim dos digitos e o display e max-wt para fazer claro */
 .digits button{
   flex: 1 1 33.333%;
   max-width: 33.333%;
